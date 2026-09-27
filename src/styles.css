@@ -56,7 +56,7 @@ h1 {
 .stats {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3, minmax(110px, 1fr));
+  grid-template-columns: repeat(4, minmax(110px, 1fr));
 }
 
 .stat,
@@ -260,6 +260,94 @@ textarea {
   color: #376336;
 }
 
+.status.blocked-tag {
+  background: #f2c5b2;
+  color: #813d2a;
+}
+
+.notice {
+  border: 1px solid;
+  border-radius: 8px;
+  font-weight: 700;
+  margin: 0 auto 16px;
+  max-width: 1240px;
+  padding: 12px 14px;
+}
+
+.notice.error {
+  background: #f7ddd6;
+  border-color: #e4b7ab;
+  color: #7c3527;
+}
+
+.notice.ok {
+  background: #ddecd9;
+  border-color: #bcd6b6;
+  color: #2f5c2e;
+}
+
+.group {
+  margin-bottom: 22px;
+}
+
+.group-header {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 10px;
+}
+
+.group-header h2 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.chip.ok {
+  background: #d8ead6;
+  color: #376336;
+}
+
+.chip.pending {
+  background: #f4deb4;
+  color: #694c21;
+}
+
+.blocking {
+  color: #a04828 !important;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.repair.blocked {
+  border-color: #e0b49f;
+}
+
+.prereq-editor {
+  border-top: 1px dashed #dde1d9;
+  display: grid;
+  gap: 8px;
+  padding-top: 10px;
+}
+
+.prereq-editor span {
+  color: #6e756d;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.prereq-selects {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hint {
+  color: #828a80;
+  font-size: 0.78rem;
+  margin: 0;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -280,6 +368,10 @@ textarea {
   .layout {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
